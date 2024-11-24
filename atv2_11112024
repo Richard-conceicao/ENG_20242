@@ -1,0 +1,79 @@
+ 1. Retorna os números ímpares de uma lista
+def numeros_impares(lista):
+    return [num for num in lista if num % 2 != 0]
+
+# 2. Retorna uma nova lista com o dobro de cada elemento
+def dobra_elementos(lista):
+    return [num * 2 for num in lista]
+
+# 3. Remove duplicatas de uma lista
+def remove_duplicatas(lista):
+    return list(set(lista))
+
+# 4. Retorna elementos divisíveis por um divisor
+def divisiveis_por(lista, divisor):
+    return [num for num in lista if num % divisor == 0]
+
+# 5. Retorna elementos que aparecem em ambas as listas
+def intersecao_listas(lista1, lista2):
+    return set(lista1) & set(lista2)
+
+# 6. Retorna a lista em ordem inversa
+def inversao_lista(lista):
+    return lista[::-1]
+
+# 7. Retorna o quadrado de cada elemento de uma lista
+def quadrados(lista):
+    return [num ** 2 for num in lista]
+
+# 8. Retorna elementos maiores que um dado valor
+def maiores_que(lista, valor):
+    return [num for num in lista if num > valor]
+
+# 9. Retorna elementos que estão em apenas uma das listas
+def elementos_unicos(lista1, lista2):
+    return list(set(lista1) ^ set(lista2))
+
+# 10. Retorna um conjunto com os elementos únicos de uma lista
+def elementos_unicos_conjunto(lista):
+    return set(lista)
+
+# 11. Retorna uma lista dos elementos únicos que estão em ambas as listas
+def elementos_unicos_em_ambas(lista1, lista2):
+    return list(set(lista1) & set(lista2))
+
+# 12. Retorna uma lista com os elementos que aparecem mais de uma vez
+def elementos_repetidos(lista):
+    return [item for item in set(lista) if lista.count(item) > 1]
+
+# 13. Retorna uma lista dos números pares
+def numeros_pares(lista):
+    return [num for num in lista if num % 2 == 0]
+
+# 14. Retorna os índices dos elementos maiores que um valor
+def indices_maiores_que(lista, valor):
+    return [index for index, num in enumerate(lista) if num > valor]
+
+# 15. Retorna uma lista com o tamanho de cada string
+def tamanho_strings(lista):
+    return [len(string) for string in lista]
+
+# 16. Retorna uma lista contendo cada número elevado ao cubo
+def cubos(lista):
+    return [num ** 3 for num in lista]
+
+# 17. Retorna uma lista de todos os elementos únicos
+def lista_elementos_unicos(lista):
+    return list(set(lista))
+
+# 18. Retorna uma lista com strings que começam com letra maiúscula
+def strings_maiusculas(lista):
+    return [string for string in lista if string and string[0].isupper()]
+
+# 19. Retorna uma lista contendo apenas os múltiplos de 3
+def multiplos_de_tres(lista):
+    return [num for num in lista if num % 3 == 0]
+
+# 20. Retorna uma lista com a interseção ordenada de forma crescente entre duas listas
+def intersecao_ordenada(lista1, lista2):
+    return sorted(set(lista1) & set(lista2))
